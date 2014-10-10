@@ -9,14 +9,28 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
-
+//@synthesize mainListNavController,mainListViewController;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor clearColor];
+    
+    [self goController:2];
     [self.window makeKeyAndVisible];
+    
+    //向微信注册
+    [WXApi registerApp:@"wx11bb3488deb195b8"];
+    
     return YES;
+}
+
+//重写系统方法
+-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+    return [WXApi handleOpenURL:url delegate:self];
+}
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    return [WXApi handleOpenURL:url delegate:self];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -45,5 +59,25 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+-(void)goController:(NSInteger)indexNum{
+    if (indexNum == 0) {
+//        mainListViewController = [[MainListViewController alloc]init];
+//        mainListNavController = [[UINavigationController alloc]initWithRootViewController:mainListViewController];
+//        self.window.rootViewController = mainListNavController;
+    }
+    else if(indexNum == 1){
+//        _xmlViewController = [[XMLViewController alloc]init];
+//        _XMLNavController = [[UINavigationController alloc]initWithRootViewController:_xmlViewController];
+//        self.window.rootViewController = _XMLNavController;
+    }
+    else if(indexNum == 2){
+        _mainViewController = [[MainViewController alloc]init];
+        _mainNavController = [[UINavigationController alloc]initWithRootViewController:_mainViewController];
+        self.window.rootViewController = _mainNavController;
+    }
+}
+
 
 @end

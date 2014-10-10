@@ -13,4 +13,11 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+
+#import "myMacros.h"
+
+#define MB_TEXTSIZE(text,font) [text length] >0 ? [text sizeWithAttributes:@{NSFontAttributeName:font}] : CGSizeZero;
+
+#define appColor [UIColor colorWithRed:30/255.0 green:197/255.0 blue:183/255.0 alpha:1.0]
+
 #endif
