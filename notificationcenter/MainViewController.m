@@ -16,7 +16,7 @@
 #import "ComboxViewController.h"
 #import "ToastViewController.h"
 #import "SQLViewController.h"
-
+#import "JSONViewController.h"
 
 static NSString *kTitleKey = @"title";
 static NSString *kExplainKey = @"explanation";
@@ -117,6 +117,13 @@ static NSString *kViewControllerKey = @"viewController";
                                kTitleKey:NSLocalizedString(@"SQLView", @""),
                                kExplainKey:NSLocalizedString(@"SQL数据库增删改查", @""),
                                kViewControllerKey:SQLView}];
+    
+    //－－－－－－－JSON数据建模
+    JSONViewController   *JSONView = [[JSONViewController alloc]init];
+    [self.menuList addObject:@{
+                               kTitleKey:NSLocalizedString(@"JSONView", @""),
+                               kExplainKey:NSLocalizedString(@"JSON数据建模", @""),
+                               kViewControllerKey:JSONView}];
 
 
 }

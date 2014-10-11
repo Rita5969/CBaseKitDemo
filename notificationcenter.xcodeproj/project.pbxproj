@@ -68,6 +68,9 @@
 		18F64D1E19CA7B7D0054975D /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F64CF419CA7B7D0054975D /* libWeChatSDK.a */; };
 		18F64D1F19CA7B7D0054975D /* SSLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F64CF919CA7B7D0054975D /* SSLineView.m */; };
 		18FCE96119E7B65B00DBEAEE /* JSONViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FCE96019E7B65B00DBEAEE /* JSONViewController.m */; };
+		18FCE96919E7C90B00DBEAEE /* Jastor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FCE96619E7C90B00DBEAEE /* Jastor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18FCE96A19E7C90B00DBEAEE /* JastorRuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FCE96819E7C90B00DBEAEE /* JastorRuntimeHelper.m */; };
+		18FCE96F19E7D21900DBEAEE /* TestJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FCE96E19E7D21900DBEAEE /* TestJson.m */; };
 		5C101E40199CD25D0007C021 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C101E3F199CD25D0007C021 /* Foundation.framework */; };
 		5C101E42199CD25D0007C021 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C101E41199CD25D0007C021 /* CoreGraphics.framework */; };
 		5C101E44199CD25D0007C021 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C101E43199CD25D0007C021 /* UIKit.framework */; };
@@ -197,6 +200,12 @@
 		18F64CF919CA7B7D0054975D /* SSLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSLineView.m; sourceTree = "<group>"; };
 		18FCE95F19E7B65B00DBEAEE /* JSONViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONViewController.h; path = JSONView/JSONViewController.h; sourceTree = "<group>"; };
 		18FCE96019E7B65B00DBEAEE /* JSONViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONViewController.m; path = JSONView/JSONViewController.m; sourceTree = "<group>"; };
+		18FCE96519E7C90B00DBEAEE /* Jastor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jastor.h; sourceTree = "<group>"; };
+		18FCE96619E7C90B00DBEAEE /* Jastor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jastor.m; sourceTree = "<group>"; };
+		18FCE96719E7C90B00DBEAEE /* JastorRuntimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JastorRuntimeHelper.h; sourceTree = "<group>"; };
+		18FCE96819E7C90B00DBEAEE /* JastorRuntimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JastorRuntimeHelper.m; sourceTree = "<group>"; };
+		18FCE96D19E7D21800DBEAEE /* TestJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestJson.h; path = Model/TestJson/TestJson.h; sourceTree = "<group>"; };
+		18FCE96E19E7D21900DBEAEE /* TestJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestJson.m; path = Model/TestJson/TestJson.m; sourceTree = "<group>"; };
 		5C101E3C199CD25D0007C021 /* notificationcenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notificationcenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C101E3F199CD25D0007C021 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5C101E41199CD25D0007C021 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -446,6 +455,7 @@
 		18F64CC419CA7B7D0054975D /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				18FCE96419E7C90B00DBEAEE /* Jastor */,
 				18814F1119D7FA84003FEB09 /* Toast */,
 				18291C8F19D3EBD900EF8B3E /* ComboxTool */,
 				18F64CC519CA7B7D0054975D /* ALMoviePlayerController */,
@@ -556,6 +566,34 @@
 			name = JSONView;
 			sourceTree = "<group>";
 		};
+		18FCE96419E7C90B00DBEAEE /* Jastor */ = {
+			isa = PBXGroup;
+			children = (
+				18FCE96519E7C90B00DBEAEE /* Jastor.h */,
+				18FCE96619E7C90B00DBEAEE /* Jastor.m */,
+				18FCE96719E7C90B00DBEAEE /* JastorRuntimeHelper.h */,
+				18FCE96819E7C90B00DBEAEE /* JastorRuntimeHelper.m */,
+			);
+			path = Jastor;
+			sourceTree = "<group>";
+		};
+		18FCE96B19E7CBD600DBEAEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18FCE96C19E7CBDF00DBEAEE /* TestJson */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		18FCE96C19E7CBDF00DBEAEE /* TestJson */ = {
+			isa = PBXGroup;
+			children = (
+				18FCE96D19E7D21800DBEAEE /* TestJson.h */,
+				18FCE96E19E7D21900DBEAEE /* TestJson.m */,
+			);
+			name = TestJson;
+			sourceTree = "<group>";
+		};
 		5C101E33199CD25D0007C021 = {
 			isa = PBXGroup;
 			children = (
@@ -590,6 +628,7 @@
 		5C101E45199CD25D0007C021 /* notificationcenter */ = {
 			isa = PBXGroup;
 			children = (
+				18FCE96B19E7CBD600DBEAEE /* Model */,
 				5C101E4E199CD25D0007C021 /* AppDelegate.h */,
 				5C101E4F199CD25D0007C021 /* AppDelegate.m */,
 				5C101E71199CD5670007C021 /* myMacros.h */,
@@ -749,6 +788,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18291CB719D3EC2E00EF8B3E /* Triangle.m in Sources */,
+				18FCE96919E7C90B00DBEAEE /* Jastor.m in Sources */,
 				18291CAE19D3EC2E00EF8B3E /* FRComboxItem.m in Sources */,
 				18291CAF19D3EC2E00EF8B3E /* FRComboxView.m in Sources */,
 				5C101E50199CD25D0007C021 /* AppDelegate.m in Sources */,
@@ -784,12 +824,14 @@
 				18814F1019D7F45F003FEB09 /* ToastViewController.m in Sources */,
 				18FCE96119E7B65B00DBEAEE /* JSONViewController.m in Sources */,
 				18F64D1F19CA7B7D0054975D /* SSLineView.m in Sources */,
+				18FCE96F19E7D21900DBEAEE /* TestJson.m in Sources */,
 				18F64CFB19CA7B7D0054975D /* MainListViewController.m in Sources */,
 				18F64D0319CA7B7D0054975D /* ALMoviePlayerController.m in Sources */,
 				18F64CFE19CA7B7D0054975D /* VideoViewController.m in Sources */,
 				18291CB619D3EC2E00EF8B3E /* PullDownViewController.m in Sources */,
 				18F64D0019CA7B7D0054975D /* XMLViewController.m in Sources */,
 				18F64CFC19CA7B7D0054975D /* QQSectionHeaderView.m in Sources */,
+				18FCE96A19E7C90B00DBEAEE /* JastorRuntimeHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
