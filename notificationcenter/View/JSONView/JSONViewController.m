@@ -9,6 +9,8 @@
 #import "JSONViewController.h"
 #import "TestJson.h"
 #import "JastorRuntimeHelper.h"
+#import "AFNetworking.h"
+#import "ASIHTTPRequest.h"
 
 @interface JSONViewController ()
 
@@ -28,7 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+
     //iOS7的屏幕适配
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
     if ( IOS7_OR_LATER )
@@ -70,7 +72,17 @@
 }
 
 -(void)buttonForJSON{
-    
+    NSURL *url = [NSURL URLWithString:@"http://115.29.6.60/download/data.txt"];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request startSynchronous];
+    NSError *error = [request error];
+    if (!error) {
+        NSData *requestData = request.responseData;
+        NSMutableDictionary *result = [NSJSONSerialization JSONObjectWithData:requestData options:0 error:&error];
+        NSLog(@"result: %@", result);
+        TestJson *testJson = [[TestJson alloc]initWithDictionary:result];
+        NSLog(@"testJson%@",testJson.result);
+    }
 }
 
 

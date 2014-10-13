@@ -9,6 +9,22 @@
 #import "TestJson.h"
 
 @implementation TestJson
-@synthesize name,time;
+@synthesize status,result;
+
++(Class)testJson_class{
+    return [TestJson_class class];
+}
 
 @end
+
+
+@implementation TestJson_class
+
+@synthesize name,type;
+
+@end
+
+@implementation TestJsonCategory
+@synthesize name,id,order;
+@end
+
