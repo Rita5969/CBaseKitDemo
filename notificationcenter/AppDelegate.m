@@ -19,19 +19,11 @@
     [self goController:2];
     [self.window makeKeyAndVisible];
     
-    //向微信注册
-    [WXApi registerApp:@"wx11bb3488deb195b8"];
     
     return YES;
 }
 
-//重写系统方法
--(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
-    return [WXApi handleOpenURL:url delegate:self];
-}
--(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
-    return [WXApi handleOpenURL:url delegate:self];
-}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

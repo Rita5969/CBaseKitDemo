@@ -51,7 +51,6 @@
 		18F64CFA19CA7B7D0054975D /* MJRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F64CB319CA7B7D0054975D /* MJRefreshViewController.m */; };
 		18F64CFB19CA7B7D0054975D /* MainListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F64CB619CA7B7D0054975D /* MainListViewController.m */; };
 		18F64CFC19CA7B7D0054975D /* QQSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F64CB819CA7B7D0054975D /* QQSectionHeaderView.m */; };
-		18F64CFD19CA7B7D0054975D /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F64CBB19CA7B7D0054975D /* ShareViewController.m */; };
 		18F64CFE19CA7B7D0054975D /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F64CBE19CA7B7D0054975D /* VideoViewController.m */; };
 		18F64CFF19CA7B7D0054975D /* SFXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F64CC119CA7B7D0054975D /* SFXMLParser.m */; };
 		18F64D0019CA7B7D0054975D /* XMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F64CC319CA7B7D0054975D /* XMLViewController.m */; };
@@ -84,7 +83,6 @@
 		18F64D1B19CA7B7D0054975D /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F64CED19CA7B7D0054975D /* UIScrollView+MJRefresh.m */; };
 		18F64D1C19CA7B7D0054975D /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F64CEF19CA7B7D0054975D /* UIView+MJExtension.m */; };
 		18F64D1D19CA7B7D0054975D /* QQList.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F64CF219CA7B7D0054975D /* QQList.m */; };
-		18F64D1E19CA7B7D0054975D /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F64CF419CA7B7D0054975D /* libWeChatSDK.a */; };
 		18F64D1F19CA7B7D0054975D /* SSLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F64CF919CA7B7D0054975D /* SSLineView.m */; };
 		18FCE96119E7B65B00DBEAEE /* JSONViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FCE96019E7B65B00DBEAEE /* JSONViewController.m */; };
 		18FCE96919E7C90B00DBEAEE /* Jastor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FCE96619E7C90B00DBEAEE /* Jastor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -204,8 +202,6 @@
 		18F64CB619CA7B7D0054975D /* MainListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainListViewController.m; sourceTree = "<group>"; };
 		18F64CB719CA7B7D0054975D /* QQSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQSectionHeaderView.h; sourceTree = "<group>"; };
 		18F64CB819CA7B7D0054975D /* QQSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQSectionHeaderView.m; sourceTree = "<group>"; };
-		18F64CBA19CA7B7D0054975D /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
-		18F64CBB19CA7B7D0054975D /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
 		18F64CBD19CA7B7D0054975D /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		18F64CBE19CA7B7D0054975D /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		18F64CC019CA7B7D0054975D /* SFXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFXMLParser.h; sourceTree = "<group>"; };
@@ -254,9 +250,6 @@
 		18F64CEF19CA7B7D0054975D /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
 		18F64CF119CA7B7D0054975D /* QQList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQList.h; sourceTree = "<group>"; };
 		18F64CF219CA7B7D0054975D /* QQList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQList.m; sourceTree = "<group>"; };
-		18F64CF419CA7B7D0054975D /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		18F64CF519CA7B7D0054975D /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		18F64CF619CA7B7D0054975D /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		18F64CF819CA7B7D0054975D /* SSLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSLineView.h; sourceTree = "<group>"; };
 		18F64CF919CA7B7D0054975D /* SSLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSLineView.m; sourceTree = "<group>"; };
 		18FCE95F19E7B65B00DBEAEE /* JSONViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONViewController.h; path = JSONView/JSONViewController.h; sourceTree = "<group>"; };
@@ -294,7 +287,6 @@
 				1831E9C319E92489007E5EFA /* libz.1.2.5.dylib in Frameworks */,
 				5C101E42199CD25D0007C021 /* CoreGraphics.framework in Frameworks */,
 				5C101E44199CD25D0007C021 /* UIKit.framework in Frameworks */,
-				18F64D1E19CA7B7D0054975D /* libWeChatSDK.a in Frameworks */,
 				5C101E40199CD25D0007C021 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,7 +512,6 @@
 				18EF9CDB19D016BA008BBFAC /* KeyTableView */,
 				18F64CB119CA7B7D0054975D /* MJRefresh */,
 				18F64CB419CA7B7D0054975D /* QQListView */,
-				18F64CB919CA7B7D0054975D /* ShareView */,
 				18F64CBC19CA7B7D0054975D /* VideoView */,
 				18F64CBF19CA7B7D0054975D /* XMLView */,
 			);
@@ -545,15 +536,6 @@
 				18F64CB819CA7B7D0054975D /* QQSectionHeaderView.m */,
 			);
 			path = QQListView;
-			sourceTree = "<group>";
-		};
-		18F64CB919CA7B7D0054975D /* ShareView */ = {
-			isa = PBXGroup;
-			children = (
-				18F64CBA19CA7B7D0054975D /* ShareViewController.h */,
-				18F64CBB19CA7B7D0054975D /* ShareViewController.m */,
-			);
-			path = ShareView;
 			sourceTree = "<group>";
 		};
 		18F64CBC19CA7B7D0054975D /* VideoView */ = {
@@ -588,7 +570,6 @@
 				18F64CC519CA7B7D0054975D /* ALMoviePlayerController */,
 				18F64CDF19CA7B7D0054975D /* MJRefreshBase */,
 				18F64CF019CA7B7D0054975D /* QQList */,
-				18F64CF319CA7B7D0054975D /* SDKExport */,
 				18F64CF719CA7B7D0054975D /* SSLineView */,
 			);
 			path = Tool;
@@ -663,16 +644,6 @@
 				18F64CF219CA7B7D0054975D /* QQList.m */,
 			);
 			path = QQList;
-			sourceTree = "<group>";
-		};
-		18F64CF319CA7B7D0054975D /* SDKExport */ = {
-			isa = PBXGroup;
-			children = (
-				18F64CF419CA7B7D0054975D /* libWeChatSDK.a */,
-				18F64CF519CA7B7D0054975D /* WXApi.h */,
-				18F64CF619CA7B7D0054975D /* WXApiObject.h */,
-			);
-			path = SDKExport;
 			sourceTree = "<group>";
 		};
 		18F64CF719CA7B7D0054975D /* SSLineView */ = {
@@ -950,7 +921,6 @@
 				18DB3AD119E4E26000D0C7A8 /* SQLViewController.m in Sources */,
 				18EB283519D54462008DFE69 /* PDMoreViewController.m in Sources */,
 				18291CB419D3EC2E00EF8B3E /* ComboxVo.m in Sources */,
-				18F64CFD19CA7B7D0054975D /* ShareViewController.m in Sources */,
 				18291CB519D3EC2E00EF8B3E /* PullDownObject.m in Sources */,
 				1831E9B619E922E2007E5EFA /* ASIAuthenticationDialog.m in Sources */,
 				18F64D1819CA7B7D0054975D /* MJRefreshFooterView.m in Sources */,

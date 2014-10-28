@@ -10,7 +10,6 @@
 #import "MainListViewController.h"
 #import "XMLViewController.h"
 #import "MJRefreshViewController.h"
-#import "ShareViewController.h"
 #import "VideoViewController.h"
 #import "KeyTableViewController.h"
 #import "ComboxViewController.h"
@@ -78,12 +77,6 @@ static NSString *kViewControllerKey = @"viewController";
                                kTitleKey:NSLocalizedString(@"MJRefresh", @""),
                                kExplainKey:NSLocalizedString(@"MJRefresh下拉刷新", @""),
                                kViewControllerKey:refreshViewController}];
-    //－－－－－－－微信分享
-    ShareViewController *shareViewController = [[ShareViewController alloc]init];
-    [self.menuList addObject:@{
-                               kTitleKey:NSLocalizedString(@"ShareWeChat", @""),
-                               kExplainKey:NSLocalizedString(@"微信分享", @""),
-                               kViewControllerKey:shareViewController}];
     //－－－－－－－视频播放器
     VideoViewController *videoViewController = [[VideoViewController alloc]init];
     [self.menuList addObject:@{

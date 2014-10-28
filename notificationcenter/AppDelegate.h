@@ -10,9 +10,8 @@
 //#import "MainListViewController.h"
 //#import "XMLViewController.h"
 #import "MainViewController.h"
-#import "WXApi.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate,WXApiDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 //按表示符进入界面
 -(void)goController:(NSInteger)indexNum;
